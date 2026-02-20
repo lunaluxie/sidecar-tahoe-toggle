@@ -26,8 +26,8 @@ try
 end try
 ```
 3. File → Export → File Format: Application
-4. Save to your Dock or Desktop
-
+4. File → Export → File Format: Application, name it something like "Sidecar Toggle" so you can find it easily in Spotlight, then save it to your Dock or Desktop
+   
 ## Requirements
 
 - macOS Tahoe 26
