@@ -26,8 +26,10 @@ if #available(macOS 26, *) {
 // don't need unsafeBitCast as we have already casted closure to common AnyObject.
 
 if isConnected {
-    manager.perform(Selector(("disconnectFromDevice:completion:")), with: ipad, with: blockObject)
+    let _ = manager.perform(Selector(("disconnectFromDevice:completion:")), with: ipad, with: closure)
+
 } else {
-    manager.perform(Selector(("connectToDevice:completion:")), with: ipad, with: blockObject)
+    let _ = manager.perform(Selector(("connectToDevice:completion:")), with: ipad, with:closure)
+
 }
 sema.wait()
